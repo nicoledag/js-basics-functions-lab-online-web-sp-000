@@ -1,11 +1,19 @@
 // Code your solution in this file!
 
-function distanceFromHqInBlocks(street) {
+function distanceFromHqInBlocks(blocks) {
   const hdqr = 42;
-  if (street > hdqr) {
-    return street - hdqr;
+  if (blocks > hdqr) {
+    return blocks - hdqr;
   }
   else {
-    return hdqr - street;
+    return hdqr - blocks;
   }
+}
+
+function distanceFromHqInFeet(street) {
+  const blockInFeet = 264;
+  return distanceFromHqInBlocks(blocks) * blockInFeet;
+
+
+
 }

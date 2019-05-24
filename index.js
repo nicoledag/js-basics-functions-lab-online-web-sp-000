@@ -10,10 +10,19 @@ function distanceFromHqInBlocks(blocks) {
   }
 }
 
-function distanceFromHqInFeet(street) {
-  const blockInFeet = 264;
-  return distanceFromHqInBlocks(blocks) * blockInFeet;
+function distanceFromHqInFeet(blocks) {
+  return distanceFromHqInBlocks(blocks) * 264;
 
+}
+
+
+function distanceTravelledInFeet(street1, street2) {
+  if (street1 > street2) {
+    return (street1 - street2) * 264;
+  }
+  else {
+    return (street2 - street1) * 264;
+  }
 
 
 }
